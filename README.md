@@ -13,7 +13,7 @@ Er wordt gebruik gemaakt van MERMAID voor diagrammen. Deze diagrammen worden aut
 Wil je de documentatie in vol ornaat beschouwen?
 
 Download MKDOCS via je Terminal (MacOS) of via Powershell (Windows): pip install mkdocs
-Geen pip? Die downloadt je hier: https://pip.pypa.io/en/stable/installation/ onder het hoofdstuk get-pip.py
+Geen pip? Die download je hier: https://pip.pypa.io/en/stable/installation/ onder het hoofdstuk get-pip.py
 Download Github Desktop en synchroniseer deze respository met een lokale folder op je computer
 Start een terminal in deze folder en plak: mkdocs serve
 De output in de terminal wijst je naar een localhost waar de website staat
