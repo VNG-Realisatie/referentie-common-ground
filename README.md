@@ -10,10 +10,10 @@ Er kan bij staan dat er een plugin nodig is voor een stukje functionaliteit. De 
 
 Er wordt gebruik gemaakt van MERMAID voor diagrammen. Deze diagrammen worden automatisch gerenderd op basis van de code. Een online editor vind je hier: https://mermaid.live/.
 
-Wil je de documentatie in vol ornaat beschouwen?
+Wil je de concept-documentatie in vol ornaat beschouwen?
 
-Download MKDOCS via je Terminal (MacOS) of via Powershell (Windows): pip install mkdocs
-Geen pip? Die download je hier: https://pip.pypa.io/en/stable/installation/ onder het hoofdstuk get-pip.py
-Download Github Desktop en synchroniseer deze respository met een lokale folder op je computer
-Start een terminal in deze folder en plak: mkdocs serve
-De output in de terminal wijst je naar een localhost waar de website staat
+- Download MKDOCS via je Terminal (MacOS) of via Powershell (Windows): pip install mkdocs
+  - Geen pip? Die downloadt je hier: https://pip.pypa.io/en/stable/installation/ onder het hoofdstuk get-pip.py
+- Download Github Desktop en synchroniseer deze respository met een lokale folder op je computer 
+- Start een terminal in deze folder en plak: mkdocs serve
+- De output in de terminal wijst je naar een localhost waar de website staat
