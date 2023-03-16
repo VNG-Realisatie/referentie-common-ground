@@ -40,3 +40,10 @@ markdown_extensions:
   
 plugins:
   - search
+
+nav:
+    - 'Oplossing Online Aanvragen':
+      - Productaanvraag: "Oplossing Online Aanvragen/Productaanvraag.md"
+      - Betrokkenen: "Oplossing Online Aanvragen/Betrokkenen in de productaanvraag.md"
+      - Vragen en antwoorden: "Oplossing Online Aanvragen/Vragen en antwoorden.md"
+
