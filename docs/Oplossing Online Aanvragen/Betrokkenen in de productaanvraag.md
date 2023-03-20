@@ -114,12 +114,12 @@ Dit is nu nog alleen een professioneel bewindvoerder die werkt bij een niet-natu
 - Daarnaast speelt dat de professioneel bewindvoerder zelf door zijn bewindvoeringskantoor gemachtigd moet zijn binnen eHerkenning om überhaupt voor zijn kantoor cliënten te mogen vertegenwoordigen.
 - Vandaar dat die desbetreffende persoon door zijn kantoor binnen eHerkenning moet zijn gemachtigd op de dienst “Aanvragen en regelen producten en diensten als Bewindvoerder” met minimaal eH3 bij de desbetreffende gemeente. Daarmee kan hij door eH heen komen als gemachtigde medewerker en daarna handelen in de rol bewindvoerder als het betreffende kantoor bewindvoerder is van de vertegenwoordigde.
 
-|  | Actor 1 “Mijn professioneel bewindvoerdersbedrijf” | Actor 2 “Ik” | Actor 3 “Mijn acting bewindvoerder” | Actor 4 (optioneel) “De beperking van mijn bedrijf tot een vestiging” | Actor 5: (optioneel: ketenmachtiging) “Een ander bedrijf dat gemachtigd is door de curator om namens zijn bedrijf te handelen” | Actor 6: Acting person |
-| --- | --- | --- | --- | --- | --- | --- |
-| betrokkeneType | niet_natuurlijk_persoon | natuurlijk_persoon | natuurlijk_persoon | vestiging |  |  |
-| id | innNnpId : 60185775 | inpBsn : 088327577 | inpBsn : 088327577 |  |  |  |
-| roltypeOmschrijving | initiator | belanghebbende |  |  |  |  |
-| indicatieVertegenwoordiging | bewindvoerder | null |  |  |  |  |
+|  | Actor 1 “Mijn professioneel bewindvoerdersbedrijf” | Actor 2 “Ik” | Actor 3 “Mijn acting bewindvoerder”
+| --- | --- | --- | --- |
+| betrokkeneType | niet_natuurlijk_persoon | natuurlijk_persoon | natuurlijk_persoon | vestiging 
+| id | innNnpId : 60185775 | inpBsn : 088327577 | inpBsn : 088327577 |  
+| roltypeOmschrijving | initiator | belanghebbende |  |  
+| indicatieVertegenwoordiging | bewindvoerder | null |  |  
 
 #### Variant: particulier bewindvoerder, curator of mentor
 

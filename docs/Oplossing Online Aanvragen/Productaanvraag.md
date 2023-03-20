@@ -159,105 +159,10 @@ Dit is een concept-JSON voor een productaanvraag Verhuizing die opgepakt wordt d
     }
 ```
 
-Het schema inclusief opmerkingen
-    
-    ```json
-    {
-      "url": https://objecten-api.example.com/api/v1/objects/095be6,
-      "uuid": "095be6",
-      "type": https://objecttypenen-api.example.com/api/v1/objects/2fbf6c,
-      "record": {
-        "index": 0,
-        "typeVersion": 1,
-        "data": {
-          "zaakgegevens": {
-            "identificatie": "123123",
-            //De unieke identificatie van de ZAAK binnen de organisatie die verantwoordelijk is voor de behandeling van de ZAAK. Wordt in de e-Suite NIET gebruikt als zaaknummer.
-            "taal": "Nederlands",
-            //Enum:[ English, Nederlands ]
-            "aanvraagtype": "verhuizing",
-            //Uniek kenmerk van het type aanvraag
-            "communicatiekanaal": "Internet",
-            //string($uri) maxLength: 1000
-            "omschrijving": "Verhuizing Blaak 27",
-            //Een korte omschrijving van de zaak. maxLength: 80
-            "toelichting": "Nieuw huis gekocht"
-            //Een toelichting op de zaak. maxLength: 1000
-          },
-          "betrokkenen": [
-            {
-              "betrokkeneType": "natuurlijk_persoon",
-              //Enum:[ natuurlijk_persoon, niet_natuurlijk_persoon, vestiging, organisatorische_eenheid, medewerker ]
-              "inpBSN": "111222333",
-              //Keuze uit: inpBSN, inp
-              "roltypeOmschrijving": "initiator",
-              //Enum:[ adviseur, behandelaar, belanghebbende, beslisser, initiator, klantcontacter, zaakcoordinator, mede_initiator ]
-              "indicatieMachtiging": "gemachtigde",
-              //Enum:[ gemachtigde, machtiginggever, null ]
-              "indicatieCorrespondentie": false
-              //boolean
-            },
-            {
-              "betrokkeneType": "natuurlijk_persoon",
-              "id": "123456788",
-              "roltypeOmschrijving": "mede-initiator",
-              "indicatieMachtiging": "machtiginggever",
-              "indicatieCorrespondentie": true
-            },
-            {
-              "betrokkeneType": "medewerker",
-              "id": "MDW123",
-              "roltypeOmschrijving": "klantcontacter",
-              "indicatieMachtiging": null,
-              "indicatieCorrespondentie": false
-            }
-          ],
-          "betaling": {
-            "statusCode": "5",
-            //Enum: [ conform betaalstatussen Ogone/Ingenico ]
-            "transactieId": "123456784",
-            "kenmerk": "2022ESUITE0320",
-            // Idem aan identificatie. Wens e-Suite: met e-Suite zaaknummer registreren in database (zoals IST)
-            "bedrag": "19.20",
-            "melding": null,
-            "transactiedatum": "20220202",
-            "status": "geslaagd"
-            //Enum: [ conform betaalstatussen Ogone/Ingenico ] 
-          },
-          "bron": "Open Formulieren",
-          "bijlagen": [
-            https://documenten-api.example.com.nl/etc,
-            https://documenten-api.example.com.nl/etc
-          ],
-          "aanvraagGegevens": {
-            //Catch-all volgt vanaf hier
-            "uw-gegevens": {
-              "voornaam": "Voorbeeld",
-              "achternaam": "Vries",
-              "tussenvoegsel": "de",
-              "geboortedatum": "1980-12-31"
-            },
-            "uw-verhuizing": {
-              "beschrijving": "Lorem ipsum..."
-            }
-          }
-        },
-        "geometry": {
-          //oneOf GeoJSON point geometry, GeoJSON multi-point geometry, et cetera (zie schema ZAAK voor duiding)
-          "type": "Point",
-          "coordinates": [
-            52.36673378967122,
-            4.893164274470299
-          ]
-        },
-        "startAt": "2023-01-01T12:00:00",
-        "endAt": null,
-        "registrationAt": "2023-01-01T12:00:00",
-        "correctionFor": null,
-        "correctedBy": null
-      }
-    }
-    ```
+!!! info "Schema productaanvraag"
+
+    Het schema voor de productaanvraag vind je (in de nabije toekomst) op de repository [Objecttypen van de VNG](https://github.com/open-objecten/objecttypes) in de folder community-concepts.
+
     
 
 ### Betrokkenen
