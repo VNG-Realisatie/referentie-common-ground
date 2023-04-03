@@ -1,0 +1,7 @@
+.idea
+.env
+.vault_password.txt
+.DS_Store
+infra/env/
+infra/fixtures/
+deploy-bot/env/
